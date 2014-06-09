@@ -467,6 +467,61 @@ body {
 /********************************/
 /* Media Queries: Tablet Portrait */
 /********************************/
+@media screen and (min-device-width: 768px) {
+  body {
+    font-size: 30px; }
+
+  h4 {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 20px; }
+
+  .viewNavigator_content {
+    top: 80px; }
+
+  .viewNavigator_header {
+    height: 80px; }
+
+  .navSelector li.active {
+    border-bottom-width: 10px !important; }
+
+  .container {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px; }
+
+  #callBtn {
+    font-size: 1em; }
+
+  .container p {
+    text-align: justify; }
+
+  #menuView .container .icon {
+    margin-left: .3em; }
+
+  .queryCounter {
+    height: 100px; }
+
+  .questContent h2 {
+    font-size: 2em; }
+
+  .questOptions div {
+    height: 250px;
+    width: 250px; }
+
+  #homeView .sq4 {
+    font-size: 1.4em;
+    padding-top: 30px; }
+
+  #homeView .sq7 {
+    font-size: 1.8em; }
+
+  #homeView .sq15 img {
+    width: 250px !important;
+    padding-top: 30px; }
+
+  #menuView .container .row .title {
+    margin-top: 15%; } }
 /********************************/
 /* Media Queries: Small Phones  */
 /********************************/
