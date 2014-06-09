@@ -1,0 +1,1072 @@
+/*Colores
+Naranja: #f59e01;*/
+
+@font-face {
+    font-family: 'open_sanslight';
+    src: url('fonts/OpenSans-Light-webfont.eot');
+    src: url('fonts/OpenSans-Light-webfont.eot?#iefix') format('embedded-opentype'),
+    url('fonts/OpenSans-Light-webfont.woff') format('woff'),
+    url('fonts/OpenSans-Light-webfont.ttf') format('truetype'),
+    url('fonts/OpenSans-Light-webfont.svg#open_sanslight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+* {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+}
+
+input,
+textarea {
+    -webkit-touch-callout: auto;
+    -webkit-user-select: auto;
+}
+html{
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    position:absolute;
+    top:0px;
+    bottom:0px;
+    left:0px;
+    right:0px;
+    overflow: hidden;
+    padding: 0;
+    margin: 0;
+    background-color:#FFF;
+    font-family: 'open_sanslight';
+    height: 100%;
+}
+.subtext {
+    font-size:0.85em;
+    font-color: #888;
+}
+.form-control{
+    background-color: #e0e0e0 !important;
+    color: #444 !important;
+}
+
+/***********************/
+/******* Data List *****/
+/***********************/
+
+.data-list {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    overflow: hidden;
+    position:relative;
+    background: rgba(255,255,255,0.1);
+    min-height:100%;
+    padding:0;
+    margin:0;
+            /*
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    */
+}
+
+.data-list-lightweight {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    position:relative;
+    margin: 0px;
+}
+
+.data-list-lightweight ul,
+.data-list-lightweight li
+.data-list ul,
+.data-list li {
+    padding:0;
+    margin:0;
+    border:none;
+    position: relative;
+}
+
+.data-list-lightweight ul,
+.data-list ul {
+    display:block;
+    width:100%;
+    max-width:100%;
+}
+
+.data-list-lightweight li,
+.data-list li {
+    cursor:pointer;
+    font-size:1em;
+    display:block;
+}
+.data-list-lightweight li.listSelected,
+.data-list li.listSelected {
+    color:#FFF;
+    border-top:1px solid #999;
+    background-color: #6b6b6b;
+    font-weight: bold;
+    /*background-image:url('images/more_disclosure_white.png');*/
+}
+/* Load View Search */
+
+    .loadItems .icon{
+        color: #f59e01;
+        font-size: 5em;
+        margin-top: 1em;
+        opacity: .7;
+    }
+    .searchString {
+        color: #619C00;
+        font-weight:bold;
+    }
+
+
+    .data-list li #bar{
+        position: absolute;
+        bottom:0px;
+        left:0px;
+        /*background: rgba(200,200,200,0.12); */
+        background: url('images/bar_background.png');
+        border-right: 1px solid rgba(150,150,150,0.16);
+        top:0px;
+        z-index: 0;
+        overflow: hidden;
+    }
+
+    .data-list li #bar #watermark{
+        position: relative;
+        margin-left:0px;
+        margin-top:50px;
+        font-size: 10em;
+        color: rgba( 255,255,255,0.5 );
+    }
+
+    .data-list li #overlay{
+        position: relative;
+        width:100%;
+        z-index: 1;
+    }
+
+    .data-list li #overlay #name{
+        color: #619C00;
+        font-weight:bold;
+        font-size: 1.35em;
+    }
+
+    .data-list li.listSelected #overlay #name,
+    .data-list li .listSelected #overlay #name,
+    .data-list .listSelected div #name,
+    .data-list li .listSelected div #name{
+        /*text-shadow: 1px 1px #000;*/
+        color: #333;
+    }
+
+    .green,
+    .price {
+        color: #619C00;
+    }
+
+    li #time {
+        font-size: 0.8em;
+        font-weight: bold;
+    }
+
+    li.listSelected .price {
+        text-shadow: 1px 1px #000;
+        /*color: #8CE200;*/
+    }
+
+    .shadow,
+    .cuisine .listSelected,
+    li.listSelected #walker,
+    li.listSelected #overlay {
+        text-shadow: 1px 1px #000;
+    }
+    .lightShadow {
+        text-shadow: 1px 1px #777;
+    }
+
+    .data-list li #overlay #distance{
+        font-size:0.75em;
+        font-style: italic;
+
+    }
+
+    .ratingStar {
+        fill:#619C00;
+    }
+
+    li.listSelected .ratingStar {
+        fill:#8CE200;
+    }
+
+    .padded {
+        padding-left:10px;
+        padding-right: 10px;
+    }
+
+    .label {
+        font-weight: bold;
+        width:60px;
+        display: inline-block;
+    }
+
+    .wideLabel {
+        width:120px;
+        display: inline-block;
+    }
+
+    .detailMapContainer {
+        border-top:1px solid #619C00;
+        border-bottom:1px solid #619C00;
+    }
+
+    .toolbar {
+        background: #DDD;
+        border-top: 1px solid #999;
+        border-bottom: 1px solid #666;
+        padding: 10px;
+    }
+
+    .amenitiesFirstCol {
+        width: 50%;
+    }
+
+    .gpu {
+        backface-visibility: hidden;
+        -webkit-backface-visibility: hidden;
+
+        transform: translate3d(0,0,0);
+        -webkit-transform: translate3d(0,0,0);
+    }
+
+    .data-table {
+        width:100%;
+    }
+
+    .data-table div div {
+        border-bottom: 1px solid #ccc;
+        padding: 10px;
+    }
+
+
+/***********************/
+/* ViewNavigator Styles */
+/***********************/
+
+.viewNavigator_header {
+    background:#333333;
+    color:#f59e01;
+    /*color:#f59e01;*/
+}
+
+.viewNavigator_header_title {
+    color:#f59e01;
+    font-size:1.5em;
+    max-width:75%;
+}
+
+.viewNavigator_backButton {
+    position:absolute;
+    top:16px;
+    left:5px;
+    /*-webkit-border-image:url("images/iOSbackButton.png") 0 4 0 12;*/
+    /*border-width:0 4px 0 12px;
+    color: white;*/
+    font-weight: bold;
+    /*background: none;*/
+    text-decoration: none;
+    color: #f59e01;
+}
+
+.viewNavigator_backButton_active,
+.viewNavigator_backButton:active {
+    background-color: #f0f0f0;
+    /*-webkit-border-image: url("images/iOSbackButton_active.png") 0 4 0 12;*/
+}
+
+.viewNavigator_content {
+    border-top:1px solid #444;
+    background:#444;
+    color:#444;
+}
+
+.viewNavigator_contentHolder {
+    color: #f0f0f0;
+    /*background: #111;*/
+    background: url(images/textures/office.png);
+    border:none;
+/*H     backface-visibility: hidden; */
+/*H     -webkit-backface-visibility: hidden; */
+
+/*H     transform: translate3d(0,0,0); */
+/*H     -webkit-transform: translate3d(0,0,0); */
+}
+
+.viewNavigator_contentHolder > div:first-child {
+    min-height:100%;
+    /*background:#333;*/
+    /*background-image:url('graphics/wheat_bg.png');
+    background-position: top left;
+    background-repeat:repeat;*/
+    border-bottom:1px solid #444;
+    border-top:1px solid #444;
+
+/*H     backface-visibility: hidden; */
+/*H     -webkit-backface-visibility: hidden; */
+
+/*H     transform: translate3d(0,0,0); */
+/*H     -webkit-transform: translate3d(0,0,0); */
+}
+.viewNavigator_backButton {
+    background: none;
+    box-shadow: none;
+}
+.viewNavigator_headerActions span{
+    color: #f59e01;
+    font-size: 2em;
+}
+
+/*End ViewNavigator Styles*/
+
+/***********************/
+/******* Login View *****/
+/***********************/
+
+#loginView .container{
+    padding: 1em;
+}
+#loginView p{
+    color: #555;
+}
+#loginView .panel{
+    background: rgba(255,255,255,0.2);
+    text-align: center;
+    border: none;
+}
+#loginView .panel img{
+    margin: 1em;
+}
+#loginView .panel .form-control{
+    -webkit-box-shadow: inset 0 3px 8px rgba(0,0,0,.4);
+    background-color: #f0f0f0;
+    border: none;
+    color: #999;
+}
+#loginView .logo{
+    -webkit-filter: drop-shadow(5px 5px 5px rgba(0,0,0,0.5));
+    width: 50%;
+}
+
+/***********************/
+/******* Home View *****/
+/***********************/
+
+#homeView {
+    width:100%;
+    margin:0px;
+    display: block;
+    text-align: center;
+    border:none;
+    height: 100%;
+    position: relative;
+}
+
+@media screen and (max-device-width : 767px) {
+    #homeView {
+        /*background-image: url('images/background_480.jpg');
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: cover;*/
+    }
+}
+
+@media screen and (min-device-width : 768px) {
+    #homeView {
+       /* background: url('images/background_1024.jpg') no-repeat center top;*/
+    }
+}
+#homeView a {
+    background: rgba(255,255,255,0.1);
+    border-radius: 10px;
+    padding-top:5px;
+    padding-bottom:5px;
+}
+#homeView .container {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    -webkit-backface-visibility: hidden;
+}
+.homeSelect{
+    width: 100%;
+    background: none;
+    padding: 1em;
+    overflow-x: hidden;
+    /*background: url(images/cincolomas.jpg) center bottom no-repeat;*/
+}
+.homeSelect img{
+    max-width: 100%;
+    margin: .5em 0;
+}
+.homeSelect .img-thumbnail{
+    background-color: inherit;
+    border: 1px solid #afafaf;
+}
+.homeButton{
+    width:48%;
+    display: inline-block;
+    overflow: hidden;
+    height: 5em;
+    text-align: center;
+    margin: 0;
+    /*position: relative;*/
+    background-color: #000;
+    background: rgba(233, 233, 233, 0.07);
+    padding: 1em;
+}
+.homeButton p{
+    /*position: absolute;*/
+    bottom: 0;
+    color: #FFFFFF;
+    font-weight: bold;
+    text-shadow: 0px 0px 10px rgba(0, 0, 0, 1);
+}
+.buttonLine .col-12{
+    text-align: center;
+}
+.buttonLine:first-child{
+    margin-top:0;
+    margin-bottom:0;
+}
+.buttonLine:last-child{
+    margin-top:0;
+    margin-bottom:.3em;
+}
+
+.expensesHomeButton{
+    width: 97%;
+    height: 5em;
+    padding-top: 1em;
+    /*background: url(images/logo.png) center bottom no-repeat;*/
+}
+.expensesHomeButton p{
+    padding-top: 1em;
+}
+.homeButton .icon, .homeButton .glyphicon{
+    font-size: 2em;
+    color: #fff;
+}
+.expensesHomeButton .glyphicon{
+    font-size: 3em;
+}
+/*.img{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    }*/
+
+
+
+/***********************/
+/******* About View *****/
+/***********************/
+
+#aboutView .container{
+    padding: 1em;
+    text-align: left;
+}
+#aboutView {
+    color: #555;
+}
+
+/********************************/
+/****** Item Conversación *******/
+/********************************/
+
+.messageContainer{
+    margin-top: .5em;
+    margin-bottom: .5em;
+}
+.messageContainerLeft{
+    text-align: left;
+    padding-left: 2em;
+}
+.messageContainerRight{
+    text-align: right;
+    padding-right: 2em;
+}
+.messageContainer .messageDate, .messageContainer .messageUser{
+    color: #b3b3b3;
+    font-size: .8em;
+    font-style: italic;
+}
+.messageContainer .messageText{
+    -webkit-border-radius: 10px;
+    padding: 1em;
+    font-size: .9em;
+}
+.messageContainerLeft .messageText{
+    background-color: #f59e01;
+    color: #111;
+}
+.messageContainerRight .messageText{
+    background-color: #555;
+}
+.messageSend{
+    width: 96%;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+.messageSend .btn{
+    color: #f0f0f0;
+    background-color: #555;
+    border-color: #444;
+}
+.conversationContainer {
+    padding-bottom: 4em !important;
+}
+
+/***********************/
+/* New Conversation View */
+/***********************/
+
+#itemViewNewConversation .container{
+    padding: 1em;
+    color: #555;
+}
+#itemViewNewConversation .panel{
+    background: rgba(255,255,255,0.2);
+    text-align: center;
+    border: none;
+}
+#itemViewNewConversation .amenities{
+    margin-left: 0;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+}
+#itemViewNewConversation .toInput{
+    float: right;
+    padding-left: .5em;
+}
+#itemViewNewConversation .fromInput{
+    padding-right: .5em;
+}
+#itemViewNewConversation .icon {
+    font-size: 2.5em;
+    color: #f59e01;
+}
+#itemViewNewConversation .panel .form-control{
+    -webkit-box-shadow: inset 0 3px 8px rgba(0,0,0,.4);
+    background-color: #f0f0f0;
+    border: none;
+    color: #999;
+}
+#itemViewNewConversation .fromInput label, #itemViewNewConversation .toInput label{
+    color: #f0f0f0;
+}
+
+/***********************/
+/* New Visit View */
+/***********************/
+
+#itemViewNewVisit .container{
+    padding: 1em;
+    color: #555;
+}
+#itemViewNewVisit .panel{
+    background: rgba(255,255,255,0.2);
+    text-align: center;
+    border: none;
+}
+#itemViewNewVisit .row{
+    margin-left: 0;
+    margin-right: 0;
+}
+#itemViewNewVisit .col-xs-10, #itemViewNewVisit .col-xs-6 {
+    padding-left: 0;
+    padding-right: 0;
+}
+#itemViewNewVisit .toInput{
+    float: right;
+    padding-left: .5em;
+}
+#itemViewNewVisit .fromInput{
+    padding-right: .5em;
+}
+#itemViewNewVisit .icon {
+    font-size: 2.5em;
+    color: #f59e01;
+}
+#itemViewNewVisit #removeVisitorButton {
+    color: #999;
+}
+#itemViewNewVisit .panel .form-control{
+    -webkit-box-shadow: inset 0 3px 8px rgba(0,0,0,.4);
+    background-color: #f0f0f0;
+    border: none;
+    color: #999;
+}
+#itemViewNewVisit .fromInput label, #itemViewNewVisit .toInput label{
+    color: #f0f0f0;
+}
+    /********************************/
+    /****** Swiper Dangerous  *********/
+    /********************************/
+
+    .swiper-container {
+      height: 15em;
+      width: 100%;
+  }
+  .content-slide {
+      padding: 20px;
+      color: #fff;
+  }
+  .swiper-slide img {
+      max-width: 100%;
+  }
+  .title {
+      font-size: 25px;
+      margin-bottom: 10px;
+  }
+  .pagination {
+      position: absolute;
+      left: 0;
+      text-align: center;
+      bottom:5px;
+      width: 100%;
+  }
+  .swiper-pagination-switch {
+      display: inline-block;
+      width: 10px;
+      height: 10px;
+      border-radius: 10px;
+      background: #999;
+      box-shadow: 0px 1px 2px #555 inset;
+      margin: 0 3px;
+      cursor: pointer;
+  }
+  .swiper-active-switch {
+      background: #fff;
+  }
+
+  /********************************/
+  /********** Item View  *********/
+  /********************************/
+
+  a{
+    color: inherit;
+}
+.container {
+    text-align: center;
+    padding: 0;
+}
+#slider{
+    height: 15em;
+}
+#slider img{
+    width: 100%;
+}
+.barra {
+    background: #999;
+    width: 100%;
+    height: 4em;
+    color: #222;
+}
+#footer {
+    position:absolute; z-index:200;
+    bottom:0; left:0;
+    width:100%;
+    height:48px;
+    background-color:#f59e01;
+    padding:0;
+    padding-top: 1em;
+    border-top:1px solid #444;
+    text-align: center;
+}
+.footerIcon{
+    display: inline-block;
+    width: 18%;
+    vertical-align: central;
+    text-align: center;
+    font-size: 1.7em;
+    color: white;
+}
+.footerIcon span{
+    display: block;
+}
+.footerIconTxt{
+    font-size: .5em;
+}
+.featured{
+    background-color: #f6f6f6!important;
+}
+.barTitle{
+    display: block;
+    font-size: 1.3em;
+}
+.barAddress, .barTel{
+    display: block;
+}
+.itemDescription p{
+    text-align: left;
+    padding: 1em;
+    padding-top: .2em;
+    padding-bottom: .2em;
+}
+.itemDescription li{
+    text-align: left;
+}
+.itemInfo{
+    text-align: left;
+}
+.itemInfo span{
+    display: block;
+    font-size: .9em;
+}
+.container .itemWell{
+    background-color: #f5f5f5;
+    text-align: left;
+    padding: 10px;
+    margin-bottom: 0;
+}
+.itemWell{
+    background-color: #f5f5f5;
+    text-align: left;
+}
+.itemWell .barButtons{
+    text-align: right;
+}
+.itemWell .barButtons .icon{
+    font-size: 2em;
+    width: .5em;
+}
+
+/********************************/
+/****** List Item  *********/
+/********************************/
+
+.itemType{
+    font-size: .9em;
+    font-style: italic;
+}
+.itemFirstLine{
+    font-size: .9em;
+    color: #cbcbcb;
+}
+.itemFirstLine .itemDate{
+    font-size: .8em;
+    color: #999;
+    font-style: italic;
+}
+.itemSecondLine{
+    font-size: 1em;
+    color: #f0f0f0;
+}
+.itemThirdLine{
+    font-size: .8em;
+    color: #999;
+}
+.itemFeatured {
+
+    background-image:url('images/more_disclosure.png') !important ;
+    background-color: yellow;
+}
+.liContainer {
+    padding:1em;
+    padding-left:1em;
+    padding-right:1px;
+    border-top:none;
+    border-bottom:1px solid #999;
+    width: 100%;
+}
+.liContainerExtended {
+    background-image:url('images/more_disclosure.png');
+    background-position:right center;
+    background-repeat:no-repeat;
+}
+.liContainerBook .label{
+        font-weight: normal;
+        width:auto;
+        display: inline;
+}
+.liContainerBook .itemThirdLine .col-xs-12, .liContainerVisit .itemThirdLine .col-xs-12{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 98%;
+    padding-left: 0;
+}
+.liContainerBook .itemDate {
+    font-size: .9em;
+}
+
+.liContainerBook .bookActions {
+    padding-right: 0;
+    padding-top: .5em;
+}
+.liContainerBook .bookActions .btnActive .glyphicon {
+    color: #f59e01;
+}
+.liContainerBook .bookActions button:disabled {
+    background-color: #333;
+    border: 1px solid #555;
+}
+.liContainerBook .selectedState, .liContainerBook .nonSelectedState {
+    margin-left: .3em;
+    font-size: 1.2em;
+}
+.liContainerBook .selectedState {
+    color: #f59e01;
+}
+.liContainerBook .nonSelectedState {
+    opacity: .3;
+}
+.liContainerVisit .itemDate {
+    font-size: .9em;
+}
+
+/********************************/
+/****** List Delivery  *********/
+/********************************/
+
+.liContainerDelivery {
+    overflow: hidden;
+}
+.deliveryList {
+    padding: .5em;
+}
+.deliveryList li{
+    display: inline-block;
+    width: 49%;
+    margin: .1em .2em;
+    padding: 0;
+}
+@media screen and (min-device-width : 768px) {
+    .deliveryList li{
+    width: 24.5%;
+}
+}
+
+/********************************/
+/****** ADS *********/
+/********************************/
+
+.adScreen{
+    left: 5%;
+    top: 5%;
+    width: 90%;
+    height: 90%;
+    background: red;
+    z-index: 100;
+    position: absolute;
+}
+
+/********************************/
+/* Div Absoluto arrow down */
+/********************************/
+
+.ftr{
+    width: 100%;
+    height: 3em;
+    background: #ebebeb;
+    z-index: 300;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    padding-top: .2em;
+    display: none;
+}
+
+/********************************/
+/* Media Queries: Tablet Portrait */
+/********************************/
+
+@media screen and (min-device-width : 768px) {
+    body{
+        font-size: 16px;
+    }
+/*    #slider {
+        height: 25em;
+    }*/
+
+   #thelist li{
+      height: 5em;
+      vertical-align: middle;
+  }
+  .container {
+    width: 100%;
+}
+/*.swiper-container {
+  height: 30em;
+}*/
+.btn-sm{
+    padding: 10px 20px;
+    font-size: 15px;
+}
+.row{
+    margin-left: -20px;
+}
+.label{
+    width:100px;
+}
+.itemInfo h1.glyphicon {
+    font-size: 4em;
+    margin-left: 1em;
+    color: #999;
+}
+.itemWell .col-sm-8 {
+    padding-left: 20px;
+}
+
+/*Nuevos de Coterránea*/
+
+/*Login View*/
+
+#loginView .panel, #itemViewNewConversation .panel, #itemViewNewVisit .panel {
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
+    text-align: center;
+    padding: 2em;
+    margin-top: 2em;
+}
+#loginView .panel img {
+    margin: 0;
+    margin-bottom: 2em;
+}
+#loginView button {
+    margin-top: 2em;
+}
+/*#loginView .logo{
+    width: 100%;
+}*/
+
+/*Home View*/
+
+.imgHomeSelect {
+    width: 100%;
+    background: rgba(255,255,255,0.2);
+    padding: 2em;
+    margin-top: 1em;
+    -webkit-border-radius: 10px;
+}
+.homeButton{
+    height: 10em;
+   padding: 2em;
+}
+.homeButton p{
+    font-size: 1.4em;
+}
+.homeButton .icon{
+    font-size: 4em;
+}
+.expensesHomeButton{
+    width: 97%;
+    height: 8em;
+}
+.expensesHomeButton .glyphicon{
+    font-size: 4em;
+}
+.expensesIcon {
+    text-align: right;
+}
+.expensesText {
+    text-align: left;
+}
+.buttonLine:last-child{
+    margin-top:0.3em;
+}
+
+/*Conversation List*/
+
+.itemFirstLine .itemDate {
+font-size: 1em;
+}
+
+/*Conversation View*/
+
+.ftr{
+    height: 3.7em;
+    padding-top: .4em;
+}
+.messageContainer .messageText {
+    font-size: 1em;
+}
+.conversationContainer {
+    padding-bottom: 5em;
+}
+
+}
+/********************************/
+/* Media Queries: Small Phones  */
+/********************************/
+
+@media screen and (max-device-width : 320px) and (-webkit-max-device-pixel-ratio: 1.5){
+    .itemPhone {
+        display: block;
+    }
+}
+/********************************/
+/* Media Queries: Xtra Small Phones  */
+/********************************/
+
+@media screen and (max-device-width : 240px) {
+    .liContainer {
+        border-top:2px solid #999;
+    }
+    .itemSecondLine {
+        font-size: 1em;
+    }
+    .liContainerCronograma .itemData .glyphicon {
+        display: none;
+    }
+    #loginView .logo{
+        display: none;
+    }
+    .imgHomeSelect {
+        display: none;
+    }
+    .liContainerExtended .itemThirdLine {
+        font-size: .9em;
+    }
+    .liContainerExtended .itemDate {
+        color: #f0f0f0;
+    }
+    .conversationContainer .messageContainer .messageUser {
+        color: #f0f0f0;
+        font-size: .9em;
+        font-style: italic;
+    }
+    .liContainerBook .itemDate {
+        color: #f0f0f0;
+        font-size: 1em;
+        font-style: normal;
+    }
+    .liContainerBook .itemThirdLine .itemName {
+        color: #f0f0f0;
+        font-size: 1em;
+        font-style: normal;
+    }
+     .liContainerVisit .itemDate {
+        font-size: 1em;
+        font-style: normal;
+    }
+    .liContainerVisit .itemThirdLine .itemDescription {
+        color: #f0f0f0;
+        font-size: 1em;
+        font-style: normal;
+    }
+}

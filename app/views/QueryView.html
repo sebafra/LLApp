@@ -1,0 +1,26 @@
+<div id="queryView">
+	<div class="container">
+        <div class="row">
+            <div class="queryCounter">
+              <span>Pregunta </span><span class="badge">1</span><span> / 15</span>
+
+            </div>
+        </div>
+        <div class="row questContent">
+          <h2>&iquest;Tu relaci&oacute;n te aporta mas alegr&iacute;as que disgustos?</h2>
+        </div>
+        <div class="row questOptions">
+          <div id="yes" class="yes"><span class="icon ion-ios7-checkmark-outline"></span></div>
+          <div id="no" class="no"><span class="icon ion-ios7-close-outline"></span></div>
+        </div>
+	</div>
+</div>
+
+<script>
+  var headerHeight = $(".viewNavigator_contentHolder").height();
+  $("#singleView").css("height",headerHeight);
+
+  //Cambio de color del Header
+  $(".viewNavigator_header").css("background","#229A84");
+  $(".viewNavigator_contentHolder").css("color","#229A84");
+</script>

@@ -1,0 +1,413 @@
+//Sections - modules
+@import "sass/variables";
+@import "sass/fonts";
+@import "sass/viewnavigator";
+@import "sass/swiper";
+
+/***********************/
+/**** HTML Elements ****/
+/***********************/
+
+* {
+-webkit-touch-callout: none;
+-webkit-user-select: none;
+}
+
+input,
+textarea {
+	-webkit-touch-callout: auto;
+	-webkit-user-select: auto;
+}
+
+html{
+    height: 100%;
+    margin: 0;
+}
+
+body {
+	position:absolute;
+	top:0px;
+	bottom:0px;
+	left:0px;
+	right:0px;
+	overflow: hidden;
+	padding: 0px;
+	margin: 0px;
+    background-color:#FFF;
+    font-family: $font-stack;
+    font-size: 14px;
+    height: 100%;
+}
+
+.subtext {
+    font-size:0.85em;
+    font-color: #888;
+}
+.form-control{
+    background-color: #e0e0e0 !important;
+    color: #444 !important;
+}
+
+/***********************/
+/******* Menu View *****/
+/***********************/
+
+#menuView .container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    -webkit-backface-visibility: hidden;
+}
+#menuView .container {
+
+    .row{
+        height: 33.3%;
+        position: relative;
+    }
+    .row:nth-child(1){
+        background: $color1;
+    }
+    .row:nth-child(2){
+        background: $color3;
+    }
+    .row:nth-child(3){
+        background: $color9;
+    }
+    .row .title{
+        margin-top:10%;
+        display: block;
+        font: {
+            family: $font-stack;
+            size: 1.5em;
+        }
+    }
+    .row .subTitle{
+        display: block;
+        font: {
+            family: $font-stack;
+            size: 1em;
+        }
+    }
+    .iconParent {
+        background: rgba(255,255,255,0.1);
+        height: 100%;
+    }
+    .icon{
+        margin-top: 90%;
+        font-size: 4em;
+    }
+
+}
+
+/***********************/
+/******* Home View *****/
+/***********************/
+
+#homeView {
+    width:100%;
+    margin:0px;
+    display: block;
+    text-align: center;
+    border:none;
+    min-height: 100%;
+    height: 100%;
+    // position: relative;
+}
+
+@media screen and (max-device-width : 767px) {
+    #homeView {
+        /*background-image: url('images/background_480.jpg');
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: cover;*/
+    }
+}
+
+@media screen and (min-device-width : 768px) {
+    #homeView {
+       /* background: url('images/background_1024.jpg') no-repeat center top;*/
+    }
+}
+#homeView a {
+    background: rgba(255,255,255,0.1);
+    border-radius: 10px;
+    padding-top:5px;
+    padding-bottom:5px;
+}
+#homeView .container {
+    // position: absolute;
+    // bottom: 0;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    overflow: hidden;
+    -webkit-backface-visibility: hidden;
+}
+#homeView .square {
+    display: inline-block;
+    width: 25%;
+    height: 17%;
+    margin: -0.65%;
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 10px;
+    border: none;
+    text-align: center;
+    vertical-align: top;
+}
+#homeView .long {
+    width: 50%;
+    vertical-align: top;
+}
+#homeView .xlong {
+    width: 75%;
+    vertical-align: top;
+}
+#homeView .big {
+    width: 50%;
+    height: 33.2%;
+    vertical-align: top;
+}
+#homeView .sq1{
+    background: $color7;
+}
+#homeView .sq2{
+    background: $color2;
+}
+#homeView .sq3{
+    background: $color3;
+    padding-top: 7%;
+}
+#homeView .sq4{
+    background: $color1;
+    font: $font-stack;
+    font-size: 1.1em;
+    color: $color7;
+}
+#homeView .sq5{
+    background: $color5;
+}
+#homeView .sq6{
+    background: $color4;
+}
+#homeView .sq7{
+    background: $color7;
+    color: $color1;
+    font: $font-extrabold;
+    font-size: 1.5em;
+    text-align: left;
+    padding-top: 7%;
+}
+#homeView .sq7 span{
+    font-size: 1.5em;
+}
+#homeView .sq8{
+    background: $color3;
+}
+#homeView .sq9{
+    background: $color6;
+}
+#homeView .sq10{
+    background: $color3;
+}
+#homeView .sq11{
+    background: $color4;
+}
+#homeView .sq12{
+    background: $color2;
+}
+#homeView .sq13{
+    background: $color4;
+}
+#homeView .sq14{
+    background: $color1;
+}
+#homeView .sq15{
+    background: $color7;
+}
+#homeView .sq16{
+    background: $color8;
+}
+#homeView .sq17{
+    background: $color5;
+}
+#homeView .sq18{
+    background: $color7;
+}
+#homeView .sq19{
+    background: $color7;
+}
+#homeView .sq20{
+    background: $color2;
+}
+#homeView .sq21{
+    background: $color3;
+}
+#homeView .sq22{
+    background: $color1;
+}
+
+
+/********************************/
+/****** Nav secundaria Items  ***/
+/********************************/
+
+.navSelector{
+    background: $color10;
+    width: 100%;
+    font-family: $font-stack;
+    margin-bottom: 5%;
+}
+.navSelector li{
+    display: inline-block;
+    width: 30%;
+    text-align: center;
+}
+.navSelector li:first-child{
+    width: 19%;
+}
+.navSelector li:last-child{
+    width: 50%;
+}
+.navSelector li.active a {
+    background: none;
+    font-weight: bold;
+}
+.navSelector li a{
+    padding: 10px 0;
+}
+.navSelector li:first-child a{
+    padding: 5px 5px;
+    font-size: 1.5em;
+}
+#singleView .navSelector li.active {
+    border-bottom: 5px solid $color1;
+}
+#singleView .navSelector li.active a {
+    color: $color1;
+}
+#singleView .navSelector li a{
+    color: $color1;
+}
+#abuseView .navSelector li.active {
+    border-bottom: 5px solid $color9;
+}
+#abuseView .navSelector li.active a {
+    color: $color9;
+}
+#abuseView .navSelector li a{
+    color: $color9;
+}
+/********************************/
+/********** ResultView  *********/
+/********************************/
+
+#resultAbuseView .navSelector li.active {
+    border-bottom: 5px solid $color1;
+}
+#resultAbuseView .navSelector li.active a {
+    color: $color1;
+}
+#resultAbuseView .navSelector li a{
+    color: $color1;
+}
+#resultHealthyView .navSelector li.active {
+    border-bottom: 5px solid $color3;
+}
+#resultHealthyView .navSelector li.active a {
+    color: $color3;
+}
+#resultHealthyView .navSelector li a{
+    color: $color3;
+}
+#resultMiddleView .navSelector li.active {
+    border-bottom: 5px solid $color5;
+}
+#resultMiddleView .navSelector li.active a {
+    color: $color5;
+}
+#resultMiddleView .navSelector li a{
+    color: $color5;
+}
+/********************************/
+/********** Bootstrap  *********/
+/********************************/
+
+.panel-heading{
+    background: $color5 !important;
+    color: $color7 !important;
+}
+.panel-body{
+    background: $color10 !important;
+    color: $color5 !important;
+    font-size: .9em;
+}
+
+/********************************/
+/********** Query Item  *********/
+/********************************/
+
+.queryCounter{
+    background: $color10;
+    width: 100%;
+    font-family: $font-stack;
+    margin-bottom: 5%;
+    text-align: center;
+    height: 50px;
+    padding-top: 10px;
+    font-size: 1.5em;
+}
+.queryCounter .badge{
+    background: $color3;
+    color: $color7;
+    font-size: 1em;
+}
+.questContent {
+    text-align: center;
+    padding: 10%;
+}
+.questOptions {
+    text-align: center;
+    margin-top: 15%;
+}
+.questOptions div {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    background: $color10;
+    margin: 0;
+    padding: 5%;
+}
+.questOptions div .icon {
+    font-size: 5em;
+}
+.questOptions .yes {
+    background: $color3;
+    color: $color10;
+}
+
+/********************************/
+/* Media Queries: Tablet Portrait */
+/********************************/
+
+@media screen and (min-device-width : 768px) {
+
+
+}
+
+/********************************/
+/* Media Queries: Small Phones  */
+/********************************/
+
+@media screen and (max-device-width : 320px) and (-webkit-max-device-pixel-ratio: 1.5){
+
+}
+
+/********************************/
+/* Media Queries: Xtra Small Phones  */
+/********************************/
+
+@media screen and (max-device-width : 240px) {
+
+}
+

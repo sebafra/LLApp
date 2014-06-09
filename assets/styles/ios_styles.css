@@ -1,0 +1,35 @@
+/***************************/
+/******* iPhone & iPad *****/
+/***************************/
+
+
+.viewNavigator_content {
+top: 56px;
+}
+.viewNavigator_header {
+height: 56px;
+}
+.viewNavigator_header_title {
+position: absolute;
+top: 22px;
+}
+.viewNavigator_headerActions {
+padding-top: 18px;
+}
+.viewNavigator_backButton {
+top: 26px;
+}
+
+.viewNavigator_contentHolder {
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    transform: translate3d(0,0,0);
+    -webkit-transform: translate3d(0,0,0);
+}
+
+.viewNavigator_contentHolder > div:first-child {
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    transform: translate3d(0,0,0);
+    -webkit-transform: translate3d(0,0,0);
+}

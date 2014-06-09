@@ -1,0 +1,75 @@
+
+/***********************/
+/* ViewNavigator Styles */
+/***********************/
+
+.viewNavigator_header {
+    background:$second-background;
+    color:$primary-color;
+}
+
+.viewNavigator_header_title {
+    color:$primary-color;
+    font-size:1.1em;
+    max-width:75%;
+}
+
+.viewNavigator_backButton {
+    position:absolute;
+    top:16px;
+    left:5px;
+/*     width:40px; */
+/*     color: rgba(0,0,0,0); */
+/*     height:35px; */
+/*     box-shadow: 0 0 0 0; */
+/*     background: #DEDEDE; */
+/*     border:1px solid #999; */
+/*     padding:0px; */
+/*     border-radius:0px; */
+/*     background-image:url('graphics/back_arrow.png'); */
+/*     background-position: 3px center; */
+/*     background-repeat:no-repeat; */
+    font-weight: bold;
+    text-decoration: none;
+    color: $primary-color;
+}
+
+.viewNavigator_backButton_active,
+.viewNavigator_backButton:active {
+    background-color: #f0f0f0;
+    /*-webkit-border-image: url("images/iOSbackButton_active.png") 0 4 0 12;*/
+}
+
+.viewNavigator_content {
+    // border-top:1px solid #444;
+    background:$primary-background;
+    color:#444;
+}
+
+.viewNavigator_contentHolder {
+    background: $primary-background;
+    color: $primary-color;
+    // background: url(images/textures/office.png);
+    border:none;
+}
+
+.viewNavigator_contentHolder > div:first-child {
+    min-height:100%;
+/*     background:#EDEDED; */
+    /*background-image:url('graphics/wheat_bg.png');
+    background-position: top left;
+    background-repeat:repeat;*/
+    border-bottom:1px solid #444;
+    // border-top:1px solid #444;
+}
+
+.viewNavigator_backButton {
+    background: none;
+    box-shadow: none;
+    font-size: 1.5em;
+    top: 5px;
+}
+.viewNavigator_headerActions span{
+    color: $primary-color;
+    font-size: 2em;
+}
