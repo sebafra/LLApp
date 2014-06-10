@@ -32,4 +32,8 @@
 <script>
   var headerHeight = $(".viewNavigator_contentHolder").height();
   $("#homeView").css("height",headerHeight);
+
+    if ( deviceOs = "oldandroid" ){
+      $(".square").css("height",(headerHeight*0.17));
+  }
 </script>

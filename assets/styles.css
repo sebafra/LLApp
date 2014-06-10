@@ -178,7 +178,7 @@ body {
 #menuView .container .row:nth-child(2) {
   background: #229a84; }
 #menuView .container .row:nth-child(3) {
-  background: #f7923e; }
+  background: #f07b19; }
 #menuView .container .row .title {
   margin-top: 10%;
   display: block;
@@ -373,13 +373,13 @@ body {
   color: #ee4636; }
 
 #abuseView .navSelector li.active {
-  border-bottom: 5px solid #f7923e; }
+  border-bottom: 5px solid #f07b19; }
 
 #abuseView .navSelector li.active a {
-  color: #f7923e; }
+  color: #f07b19; }
 
 #abuseView .navSelector li a {
-  color: #f7923e; }
+  color: #f07b19; }
 
 /********************************/
 /********** ResultView  *********/
@@ -522,9 +522,65 @@ body {
 
   #menuView .container .row .title {
     margin-top: 15%; } }
+/*************************************/
+/* Media Queries: Big Screen Phones  */
+/******** Ej: Galaxy SIII  ***********/
+/*************************************/
+@media screen and (min-device-width: 360px) and (max-device-width: 768px) and (-webkit-min-device-pixel-ratio: 2) {
+  body {
+    font-size: 15px; }
+
+  .viewNavigator_content {
+    top: 50px; }
+
+  .viewNavigator_header {
+    height: 50px; }
+
+  #homeView .sq15 {
+    padding-top: 50px; }
+
+  #homeView .sq7 {
+    font-size: 1.7em; }
+
+  #homeView .sq4 {
+    padding-top: 5%; } }
 /********************************/
 /* Media Queries: Small Phones  */
 /********************************/
 /********************************/
 /* Media Queries: Xtra Small Phones  */
 /********************************/
+@media screen and (max-device-width: 240px) {
+  p, li {
+    font-size: 16px; }
+
+  h4 {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-top: 5px; }
+
+  #menuView .container .icon {
+    margin-top: 70%; }
+
+  .questOptions {
+    margin-top: 5%; }
+
+  .questContent {
+    padding: 5%; }
+
+  .queryCounter {
+    margin-bottom: 0; }
+
+  .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+    background-color: #E5E5C3 !important;
+    border-width: 0 !important; }
+
+  .nav-tabs > li > a, .nav-tabs > li > a:hover, .nav-tabs > li > a:focus {
+    background-color: #E5E5C3 !important;
+    border-width: 0 !important; }
+
+  #menuView .container .row .title {
+    margin-top: 5%; }
+
+  #homeView .sq7 {
+    padding-top: 5%; } }
