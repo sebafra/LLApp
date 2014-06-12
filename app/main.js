@@ -29,6 +29,7 @@ function appTemplatesLoaded() {
 }
 
 function onBackKey( event ) {
+	console.log("backkkkkkkkkkkkkkkkk");
     if ( window.viewNavigator.history.length > 1 ){
         event.preventDefault();
         window.viewNavigator.popView();
@@ -36,6 +37,7 @@ function onBackKey( event ) {
     }
     navigator.app.exitApp();
 }
+
 function loadConstants() {
     setTimeout(function(){
         $("#urlWeb").html(URL_WEB);
@@ -43,5 +45,7 @@ function loadConstants() {
     }, 1000);
 }
 
-
+function openExternalURL( url ) {
+    window.open( url, '_blank' );
+}
 

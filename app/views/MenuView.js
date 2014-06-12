@@ -30,7 +30,13 @@ window.MenuView = Backbone.View.extend({
         ViewNavigatorUtil.pushView( view );
     },
     showQuery:function () {
-        var view = new QueryView();
+    	App.queryIdx = 0;
+    	var query = {
+    			queryNumber:App.queryIdx + 1,
+    			query:App.querys[App.queryIdx]
+    	};
+    	
+        var view = new QueryView(query);
         ViewNavigatorUtil.pushView( view );
     },
     showAbuse:function () {
