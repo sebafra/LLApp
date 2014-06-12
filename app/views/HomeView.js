@@ -11,7 +11,7 @@ window.HomeView = Backbone.View.extend({
     },
 
     events:{
-        "click .sq7":"showMenu"
+        "click .container":"showMenu"
     },
 
     render:function (eventName) {
