@@ -242,12 +242,24 @@ body {
   vertical-align: top; }
 
 #homeView .long {
-  width: 50%;
-  vertical-align: top; }
+  width: 50%; }
+
+#homeView .long p, #homeView .sq3 img {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%); }
 
 #homeView .xlong {
-  width: 75%;
-  vertical-align: top; }
+  width: 75%; }
+
+#homeView .xlongContent {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%); }
 
 #homeView .big {
   width: 50%;
@@ -261,8 +273,7 @@ body {
   background: #f7a094; }
 
 #homeView .sq3 {
-  background: #229a84;
-  padding-top: 7%; }
+  background: #229a84; }
 
 #homeView .sq4 {
   background: #ee4636;
@@ -281,11 +292,12 @@ body {
   color: #ee4636;
   font: open_sansextrabold;
   font-size: 1.5em;
-  text-align: left;
-  padding-top: 7%; }
+  text-align: left; }
 
-#homeView .sq7 span {
-  font-size: 1.5em; }
+#homeView .sq7 .icon {
+  font-size: 1.5em;
+  vertical-align: middle;
+  margin-left: .2em; }
 
 #homeView .sq8 {
   background: #229a84; }

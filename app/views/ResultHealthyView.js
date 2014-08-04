@@ -13,7 +13,6 @@ window.ResultHealthyView = Backbone.View.extend({
 
     events:{
         "click .nav":"refreshTab"
-
     },
 
      // función cuando se ejecuta el botón volver

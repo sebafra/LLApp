@@ -4,6 +4,16 @@
 @import "sass/viewnavigator";
 @import "sass/swiper";
 
+//Includes
+@mixin vertical-align {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+
 /***********************/
 /**** HTML Elements ****/
 /***********************/
@@ -157,11 +167,15 @@ body {
 }
 #homeView .long {
     width: 50%;
-    vertical-align: top;
+}
+#homeView .long p, #homeView .sq3 img{
+    @include vertical-align;
 }
 #homeView .xlong {
     width: 75%;
-    vertical-align: top;
+}
+#homeView .xlongContent{
+    @include vertical-align;
 }
 #homeView .big {
     width: 50%;
@@ -176,7 +190,6 @@ body {
 }
 #homeView .sq3{
     background: $color3;
-    padding-top: 7%;
 }
 #homeView .sq4{
     background: $color1;
@@ -196,10 +209,11 @@ body {
     font: $font-extrabold;
     font-size: 1.5em;
     text-align: left;
-    padding-top: 7%;
 }
-#homeView .sq7 span{
+#homeView .sq7 .icon{
     font-size: 1.5em;
+    vertical-align:middle;
+    margin-left: .2em;
 }
 #homeView .sq8{
     background: $color3;
